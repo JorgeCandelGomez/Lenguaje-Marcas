@@ -1,0 +1,150 @@
+:root{
+    --color-principal: #007BFF;
+    --color-secundario: #28A745;
+    --color-texto-oscuro: #212529;
+    --color-fondo: #E9ECEF;
+    --color-claro: #ffffff;
+
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px 5%;
+}
+
+/*flexbox nav y footer*/
+
+h1{
+    display:inline;
+    font-size: 50px;
+}
+
+header,footer{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    background-color: var(--color-fondo);
+font-size: 25px;    width: calc(100% - 70px)
+}
+
+nav ul{
+    flex:1;
+
+    display:flex;
+    justify-content: space-around;
+    gap:40px;
+    padding-top: 10px;
+    padding-right:10px;
+
+    list-style: none;
+
+}
+
+nav a{
+    text-decoration: none;
+    padding: 5px;
+    display:block;
+}
+
+nav li:hover, footer li:hover{
+    background-color: var(--color-claro);
+}
+
+footer ul{
+    
+
+    display:flex;
+    justify-content: space around;
+    gap:40px;
+    padding-right:10px;
+
+    list-style: none;
+}
+
+
+nav ul >li:last-child a{
+    color: var(--color-secundario);
+}
+
+/*Patrocinadores*/
+
+h2{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.patrocinadores{
+    margin-top: 15px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+
+.patrocinadores article{
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 25px;
+}
+
+@media screen and (max-width:900px ){
+    .patrocinadores{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer,header{
+        text-align:center;
+        flex-direction:column;
+    }
+
+    footer ul, header ul{
+            flex-direction:column;
+            gap:5px;
+    }
+}
+
+/*Tabla*/
+
+.agenda ul{
+    margin-top: 20px;
+    background-color: var(--color-fondo);
+    padding: 50px;
+    list-style-type:'🚀 ';
+    
+}
+
+.agenda table{
+    margin-top: 20px;
+    border-collapse:collapse;
+    width: 70%;
+    text-align: left;
+    
+}
+th{
+    background-color: var(--color-principal);
+ 
+    font-size: 25px;
+    
+}
+
+th,td{
+    border: 2px solid grey;
+    padding: 15px;
+}
+
+
+
+
+
+
+footer{
+    margin-top: 50px;
+}

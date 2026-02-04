@@ -1,0 +1,52 @@
+.menu{
+    background-color: lightblue;
+}
+
+ul{
+    list-style-type: none;
+    
+}
+
+ul li{
+    display: inline;
+    margin: 10px;
+    
+    
+}
+
+li a{
+    display: inline-block;
+    font-weight:bold;
+    text-decoration:none;
+    color: black;
+    padding: 10px;
+    
+    
+
+}
+
+.iconoFb{
+    background-image: url("./enlaces_iconos/iconos/facebook.png");
+}
+
+.iconoTw{
+    background-image: url("./enlaces_iconos/iconos/twitter.png");
+}
+
+ .iconoIg{
+    background-image: url("./enlaces_iconos/iconos/instagram.png");
+}
+
+.iconoFb,.iconoTw, .iconoIg{
+     background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding-right: 2rem;
+    background-size: 1.3rem;
+}
+
+li:hover a{
+    background-color: yellow;
+   
+}
+
+

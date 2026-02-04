@@ -1,0 +1,77 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: rgb(247, 247, 231);
+    margin: 20px 10%;
+}
+
+.tarjetas{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+}
+.tarjetas h2{
+    margin-bottom:10px;
+}
+
+.tarjetas article{
+    
+
+
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    padding:10px;
+}
+
+
+
+.flotante[data-estado="oferta"]{
+    font-weight: bold;
+}
+
+.flotante[data-estado="nuevo"]{
+    font-size: 19px;
+    text-decoration: underline;
+}
+
+
+#menu{
+    margin-top: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: rgb(202, 202, 79);
+    list-style:none;
+    font-size: 20px;
+    
+}
+
+#menu li{
+    display:inline;
+    flex:1;
+    min-width: 20px;
+
+    text-align:center;
+}
+
+#menu li:hover{
+    background-color: yellow;
+}
+
+#menu li a{
+    text-decoration:none;
+}
+
+#menu li a:link, #menu li a:visited, #menu li a:hover{
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+

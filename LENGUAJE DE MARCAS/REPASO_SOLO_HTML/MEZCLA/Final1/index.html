@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nombre autor">
+        <meta name="description" content="140-160 palabras">
+        <title>Exámen 1</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <h1>Header del exámen</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="#a">A</a> </li>
+                    <li><a href="#b">B</a> </li>
+                    <li><a href="#c">C</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="caracteristicas">
+                <h2>Titulo de la sección</h2>
+                <ul>
+                    <li>Caract 1</li>
+                    <li>Caract 2</li>
+                    <li>Caract 3</li>
+
+                </ul>
+
+            </section>
+
+            <section id="suscripcion">
+                <h2>Titulo de sección suscripcion </h2>
+
+                <form action="asdf.php" method="post" >
+                    <fieldset>
+                        <legend>Datos de contacto</legend>
+
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" required placeholder="Correo">
+
+                       <label for="consentimiento" >
+                            <input  type="checkbox" id="consentimiento" name="consentimiento" required>
+                            Acepto los terminos y condiciones
+                       </label>
+                    </fieldset>
+                    <div id="controles">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Reiniciar">
+
+                    </div>
+                    
+                </form>
+                
+            </section>
+        </main>
+    </body>
+</html>

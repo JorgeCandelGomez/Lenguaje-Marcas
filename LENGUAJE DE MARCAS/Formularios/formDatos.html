@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos</title>
+</head>
+<body>
+    <h1>Rellena tus datos</h1>
+    <form action="mipagina.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <br>
+        <input type="text" name="nombre" id="nombre" size="20" maxlength="15">
+        <br>
+
+        <label for="apellidos">Apellidos:</label>
+        <br>
+        <input type="text" name="apellidos" id="apellidos" size="20" maxlength="30">
+        <br>
+
+        <label for="nombre">Email:</label>
+        <br>
+        <input type="email" name="email" id="email" size="20" maxlength="60">
+        <br>
+
+        <label for="nombre">DNI</label>
+        <br>
+        <input type="text" name="dni" id="dni" size="20" maxlength="9">
+        <br><br>
+        
+            <label>Idioma materno:</label><br>
+            
+            <input type="radio" name="idioma" id="castellano" value="castellano">
+            <label for="castellano">Castellano</label><br>
+
+            <input type="radio" name="idioma" id="valenciano"value="valenciano">
+            <label for="valenciano">Valenciano</label><br>
+            
+            <input type="radio" name="idioma" id="otros" value="otros">
+            <label for="otros">Otros</label><br><br>
+        <label>
+            Subir mi foto
+            <input type="file">
+        </label><br><br>
+        
+
+        <input type="checkbox" name="permisos" id="permisos">
+        <label for="permisos">Permitir que otros puedan ver mis datos</label>
+        <br><br>
+
+        <input type="submit" value="Guardar cambios">
+        <input type="reset" value="Borrar datos introducidos">
+            
+        
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario Avanzado</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <form>
+            <fieldset id="datosAcceso">
+                <legend>Datos de acceso</legend>
+
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required placeholder="Usuario">
+
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" required placeholder="Correo">
+
+                <label for="contrasenya">Contraseña</label>
+                <input type="password" id="contrasenya" name="contrasenya" required placeholder="Contraseña">
+
+                <label for="repeticionContrasenya">Repite la contraseña</label>
+                <input type="password" id="repeticionContrasenya" name="contrasenya" required placeholder="Repite contraseña">
+            </fieldset>
+
+            <fieldset id="datosPersonales">
+                <legend>Datos personales</legend>
+
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" required placeholder="Edad" min="18" max="120">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Telefono" >
+
+                <label for="pais">País</label>
+                <select id="pais" name="pais">
+                    <option value="espanya" selected>España</option>
+                    <option value="francia">Francia</option>
+                    <option value="portugal">Portugal</option>
+                </select>
+            </fieldset>
+
+            <div id="controles">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reiniciar">
+            </div>
+        </form>
+    </body>
+</html>

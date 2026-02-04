@@ -1,0 +1,190 @@
+:root{
+    --color-primario: #FF6600;
+    --color-oscuro: #333333;
+    --color-claro: #ffffff;
+    --color-fondo: #f4f4f4;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+
+
+nav ,footer{
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu-interno{
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+    list-style:none;
+}
+
+.menu-interno a{
+    color: var(--color-claro);
+    text-decoration: none;
+}
+
+
+
+header{
+    background-color: grey;
+    text-align: center;
+    padding: 40px;
+}
+
+header >h1{
+    color: var(--color-primario);
+    
+}
+
+header p,header a{
+    padding:10px;
+}
+
+/*main*/
+main{
+    background-color: rgb(207, 205, 205);
+    padding: 20px 5%;
+   
+}
+
+.ponentes{
+    padding-top: calc(7px + 3px);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    gap:20px;
+}
+
+.ponentes article{
+    grid-row-start:2;
+    margin: 20px;
+    background-color: var(--color-claro);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/*programa*/
+
+.programa{
+    margin-top: 20px;
+}
+
+.programa ul{
+    background-color: var(--color-claro);
+    padding: 20px;
+}
+
+.programa ul + aside{
+    margin-top: 10px;
+
+}
+.programa aside p{
+    color:red;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/*Tarifas*/
+
+.tarifas{
+    margin-top:20px;
+}
+
+.tarifas table{
+    margin-top:20px;
+    border: 1px black solid;
+    width: 100%;
+    text-align: left;
+
+    border-collapse: collapse;
+    background-color: var(--color-claro);
+    
+    
+}
+
+.tarifas th,.tarifas td{
+    border:0.5px rgb(207, 203, 203) solid;
+    padding:7px;
+}
+
+
+.tarifas th{
+    background-color: var(--color-primario);
+    color: var(--color-claro);
+}
+
+/*Contacto*/
+
+.contacto{
+    margin-top:20px;
+}
+.contacto form{
+    margin-top:20px;
+}
+
+.contacto  form input[type="submit"]{
+    background-color: var(--color-primario);
+    padding: 5px;
+    color: var(--color-claro);
+    border:0px;
+}
+
+
+
+footer a:link,
+footer a:visited,
+footer a:hover{
+    color: var(--color-claro);
+    margin: 5px;
+    
+}
+
+h2{
+    margin-top:20px;
+}
+
+
+    
+
+@media screen and (max-width: 1023px){
+    
+    
+    .ponentes {
+        
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        gap: 10px;
+
+    }
+    
+    
+    /* El resto de ajustes que ya tenías */
+    main{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    nav, .menu-interno, footer {
+        flex-direction: column; 
+        gap: 10px;
+        text-align: center;
+    }
+    
+   
+
+}

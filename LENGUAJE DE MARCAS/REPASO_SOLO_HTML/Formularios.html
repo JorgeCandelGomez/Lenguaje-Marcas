@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Autor">
+        <meta name="description" content="140-160 palabras">
+        <title>Tabla básica</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <form content="miphp.php" method="post">
+            <label for="correo">Correo </label>
+            <input type="email" id="correo" name="correo" placeholder="Correo" required>
+            <br><br>
+            <label for="usuario">Nombre</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" pattern="[A-Za-z0-9]{4,}">
+            <br><br>
+            <label for="contrasenya">Contraseña</label>
+            <input type="password" id="contrasenya" name="contrasenya" placeholder="Contraseña" minlengh="8", maxlengh="12">
+            <br><br>
+            <label for="respuesta">Donde conoció nuestra web?</label>
+            <select id="respuesta" name="respuesta">
+                <option value="" selected>Elige una opción...</option>
+                <option value="internet">Buscador</option>
+                <option value="redesSociales">Redes sociales</option>
+                <option value="recomendacion">Recomendación</option>
+            </select>
+            <br><br>
+            <fieldset><legend>¿Desea recibir noticias?</legend></fieldset>
+            
+            <input type="radio" id="si" name="recibirNoticias" value="si">Sí
+            <label for="si"></label>
+            <input type="radio" id="no" name="recibirNoticias" value="no">No
+             <label for="no"></label>
+        </form>
+    </body>
+</html>

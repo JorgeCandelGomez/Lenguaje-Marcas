@@ -1,0 +1,22 @@
+body{
+    background-color: #4EEBF5;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+    
+}
+
+ol a:link{
+    color:white;
+    text-decoration: none;
+}
+
+ol a:active{
+    color:orangered;
+    text-decoration: underline;
+}
+
+ol a:hover{
+    color:orangered;
+    text-decoration: underline;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="nombre autor">
+        <meta name="viewport..." ><!-- ayuda a que se vea bien en todo dispositivo, se adapte a la pantalla etc.-->
+        <meta name="description" content="140-160 caracteres para Google">
+        <title>Ejercicio2</title>
+    </head>
+    <body>
+        <header>
+            <h1>nombre evento</h1>
+            <ul>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#ponentes">Ponentes</a></li>
+                <li><a href="#registro">Registro</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </header>
+        <main>
+            <section>
+                <h2 id="informacion">Información</h2>
+                <p>texto informativo</p>
+                <figure>
+                    <img src="url" alt="texto alternativo" title="imagen de lo que sea">
+                    <figcaption>Pie de foto</figcaption>
+                </figure>
+                <ul>
+                    <li>T1</li>
+                    <li>T2</li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="ponentes">Ponentes</h2>
+                <table> <!-- colsan expandir celda hacia la derecha. Rowspan expandir hacia abajo-->
+                    <tr>
+                        <th>nombre</th>
+                        <th>especialidad</th>
+                        <th>dia/hora</th>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>Perro</td>
+                        <td>Hoy</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h2 id="registro">Registro</h2>
+                <form action="url.php" method="post"> <!-- puede que me haya faltado el fieldset? no sé, al no haber apartados no lo he puesto. tipo de entrada en el enunciado no sabía que era.-->
+                    <label for="nombre">
+                        Nombre <input type="text" id="nombre" name="nombre" placeholder="nombre" maxlength="20">
+                    </label>
+                    <label for="email">
+                        Email <input type="email" id="email" name="email" placeholder="email" maxlength="50">
+                    </label>
+                    <label for="tlf">
+                        Teléfono <input type="tel" id="tlf" name="tlf" placeholder="Teléfono" pattern="[0-9]{9,11}">
+                    </label>
+                    <input type="radio" id="mañanas" name="horario" value="mañanas" checked>
+                    <label for="mañanas">Mañanas</label>
+                    <input type="radio" id="tardes" name="horario" value="tardes" checked>
+                    <label for="tardes">Mañanas</label>
+
+                    <textarea rows="5" cols="20">area para escribir lo que sea.</textarea>
+                    <input type="checkbox" id="condiciones" name="condiciones"><label for="condiciones">Aceptar condiciones de uso.</label>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar datos</button>
+
+                </form>
+            </section>
+            <section>
+                <h2 id="contacto">Contacto</h2>
+                <p> info contacto</p>
+                <iframe google maps con chincheta en ubicación></iframe>
+            </section>
+        </main>
+        <footer>
+            <address>
+                <p>Copyright año actual - info contacto</p>
+                
+            </address>
+        </footer>
+    </body>
+</html>

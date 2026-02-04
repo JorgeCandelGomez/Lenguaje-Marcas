@@ -1,0 +1,41 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    margin:120px 5%;
+    
+}
+
+.caja{
+    transition: all 0.5s ease;
+}
+
+.caja:hover{
+    transform: rotate(20deg);
+}
+
+.caja[data-importante="true"]{
+    background-color:blue;
+}
+
+.contenedor-cajas .caja:nth-child(3){
+    background-color:red;
+}
+
+:disabled{
+    background-color: grey;
+}
+
+a{
+    border: 1px solid rgb(34, 1, 1);
+    border-radius:10px;
+    padding:5px;
+    transition: transform 0.5s;
+    display:inline-block;
+
+}
+.enlace:hover{
+    transform: scale(1.1);
+}

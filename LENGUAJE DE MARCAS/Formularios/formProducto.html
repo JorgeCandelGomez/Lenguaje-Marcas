@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+</head>
+<body>
+    <h1>Información sobre el producto</h1>
+    <form action="mipagina.php" method="post" >
+        <fieldset >
+            <legend>Datos básicos</legend>
+            <label for="nombre">Nombre</label>
+            <br>
+            <input type="text" id="nombre" name="nombre" size="50" maxlength="25">
+            <br><br>
+            <label for="descripcion">Descripción</label>
+            <br>
+            <textarea name="descripcion" rows="7" cols="50"></textarea>
+            <br><br>
+            <label for="foto">Foto</label>
+            <input type="file" id="foto" name="foto">
+            <br><br>
+            <input type="checkbox" name="contador" id="contador">
+            <label for="contador">Añadir contador de visitas</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <label for="precio">Precio</label>
+            <input type="number" id="precio" name="precio" size="10">€
+            &ensp;&ensp;
+            <label for="impuestos">Impuestos</label>
+            <select name="impuestos" id="impuestos">
+                <option value="4" selected>4%</option>
+                <option value="7">7%</option>
+                <option value="16">16%</option>
+                <option value="25">25%</option>
+            </select>
+            <br><br>
+            <label >Promoción</label><br>
+            
+            <input type="radio" name="promocion" id="ninguno" value="ninguno" checked>
+            <label for= "ninguno">Ninguno </label>
+            <br>
+            <input type="radio" name="promocion" id="transportegratuito" value="transporte">
+            <label for="transportegratuito">Transporte gratuito</label>
+            <br>
+            <input type="radio" name="promocion" id="descuento5" value="descuento5">
+            <label for="descuento5">Descuento 5%</label>
+        </fieldset>
+    </form>
+</body>
+</html>

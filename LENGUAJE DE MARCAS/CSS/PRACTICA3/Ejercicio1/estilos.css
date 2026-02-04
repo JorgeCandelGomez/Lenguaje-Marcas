@@ -1,0 +1,48 @@
+header,footer{
+    background-color: #84250C;
+    color:white;
+    
+}
+
+.menu{
+    text-align: right;
+    list-style-type: none;
+    
+}
+
+.menu li{
+    display: inline;
+    margin-right: 10px;
+    padding:5px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
+
+#principal{
+    margin: 20px 20% 20px 20%;
+
+}
+
+#contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+
+}
+
+#oferta{
+    border:solid 1px grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+header{
+    padding:0px 0px 8px 8px;
+}

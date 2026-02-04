@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+         <meta charset="utf-8">
+        <meta name="author" content="autor">
+        <meta name="description" content="140-160">
+        <meta name="viewport"...>
+        <link rel="icon"...>
+        <title>Enunciado 3</title>
+    </head>
+    <body>
+        <header>
+            <h1>Nombre</h1><img src="url" alt="alternativo">
+            <nav>
+                <ul>
+                    <li><a href="#quienessomos">Quienes somos</a></li>
+                    <li><a href="#carta">Carta</a></li>
+                    <li><a href="#reservas">Reservas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2 id="quienessomos">Quienes somos</h2>
+                <p>texto<strong>asfa</strong></p>
+                <aside>
+                    <!-- <ul>
+                            <li><a href="url">Evento especial</a></li>
+                            <li><a href="url">Descuento del mes</a></li>
+                        </ul>
+                        MEJOR ALGO ASÍ que todo el churro que está mal además-->
+                    <ul>
+                        <li>Eventos
+                            <ul>
+                                <li><a href="url">Evento x</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="promociones" title="y">promocion x</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <h2 id="carta">Carta</h2>
+                <table>
+                    <caption>titulo</caption>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>plato</th>
+                            <th>Precio</th>
+                            <th>descripcion</th>
+                        </tr>
+            
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>plato</td>
+                            <td>precio</td>
+                            <td rowspan="2">ñslkfjasñl</td>
+                        </tr>
+                        <tr></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">asfasfas</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <h2 id="reservas">Reservas</h2>
+                <form action="sfd.php" methond="post">
+                    <fieldset>
+                        <legend>Datos reserva</legend>
+                        <label for="nombre">Nombre: 
+                            <input type="text" required id="nombre" value="nombre" name="nombre" maxlength="30">
+                        </label>
+
+                        <label for="correo">Correo: 
+                            <input type="email" required id="correo" value="correo" name="correo" maxlength="50">
+                        </label>
+                        
+                        <label for="tlf">Telefono: 
+                            <input type="tel" required id="tlf" value="tlf" name="tlf" pattern="[0-9]{9,11}">
+                        </label>
+
+                        <label for="fechahora">Fecha y Hora: 
+                            <input type="datetime" required id="fechahora" value="fechahora" name="fechahora">
+                        </label>
+
+                        <label for="personas">Nº personas:
+                            <input type="number" required id="personas" name="personas" value="personas" min="1" max="10">
+                        </label>
+
+                        <label>Mesa</label>
+                            <input type="radio" id="interior" value="interior" name="mesa">
+                            <label for="interior">Interior</label>
+
+                            <input type="radio" id="exterior" value="exterior" name="mesa">
+                            <label for="exterior">Exterior</label>
+
+                        <label>Comentarios extra</label>   
+                            <textarea rows="5" cols="20">
+        
+                            </textarea>
+                        
+                        <input type="checkbox" id="terminos" value="terminos" name="terminos">
+                        <label for="terminos">Acepar terminos de uso</label>
+                        <hr>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Borrar datos</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <address>
+                Nombre restaurante
+                año
+                dirección
+            </address>
+        </footer>
+    </body>
+</html>

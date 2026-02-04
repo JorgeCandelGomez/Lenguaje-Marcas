@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 1</title>
+        <link rel="stylesheet" href="estilos.css">
+
+    </head>
+    <body>
+        <header>
+            <h1>Titulo de la página</h1>
+            <nav >
+                <ul class="navegacion">
+                    <li><a href="#inicio">Inicio</a> </li>
+                    <li><a href="#temario">Temario</a> </li>
+                    <li><a href="#contacto">Contacto</a> </li>            
+                </ul>
+            </nav>
+        </header>
+        <main id="principal">
+            <section class="introduccion">
+                <h2>Titulo de la sección</h2>
+                <p>Bienvenidos a la parte principal.</p>
+            </section>
+            <section class="temario">
+                <h2>Temario</h2>
+                <ol>
+                    <li>Modulo 1</li>
+                    <li>Modulo 2</li>
+                    <li>Modulo 3</li>
+                    <li>Modulo 4</li>
+                </ol>
+            </section>
+            <section class="registro">
+                <h2>Registro</h2>
+                <form action= "loquesea.php" method="post">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+                    <br><br>
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required placeholder="Correo">
+                    <br><br>
+                    <label for="nivel">Nivel</label>
+                    <select id="nivel" name="nivel_curso">
+                        <option  value="basico" selected>Básico</option>
+                        <option value="intermedio">Intermedio</option>
+                        <option value="avanzado">Avanzado</option>
+                    </select>
+                    <br><br>
+                    <textarea rows="5" cols="40" placeholder="Comentarios" name="comentarios"></textarea>
+                    <br><br>
+                    <input type="submit" value="Enviar">
+                    
+                    <hr>
+                    
+                </form>
+            </section>
+        </main>
+        <footer>
+            <address>
+                Informaciónd el autor etc.
+            </address>
+            &copy;
+        </footer>
+    </body>
+</html>

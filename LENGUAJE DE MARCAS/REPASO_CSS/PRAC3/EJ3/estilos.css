@@ -1,0 +1,51 @@
+body{
+    margin: 20px 20%;
+    font-family: Arial;
+}
+
+h1{
+    text-align: center;
+}
+
+#community,#professional,#enterprise{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: double 1px blue;
+    border-radius: 10px;
+}
+
+.ofertas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+
+}
+
+#enterprise{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.promocion{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: double 1px blue;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+    
+    
+
+}
+
+.italic{
+    font-style: italic;
+}
+
+.negrita{
+    font-weight: bold;
+}

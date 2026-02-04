@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="autor">
+        <meta name="description" content="140-160 palabras">
+        <title>Formularios</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+
+        <form content="loquesea.php" method="post" id="formulario">
+            <fieldset>
+                <legend>Datos</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" placeholder="Correo"required>
+                
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+            
+
+        </form>
+    </body>
+</html>

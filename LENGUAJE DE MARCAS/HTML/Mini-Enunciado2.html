@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="autor">
+        <meta name="description" content="140-160">
+        <meta name="viewport"...>
+        <link rel="icon"...>
+        <title>Mini-E2</title>
+    </head>
+    <body>
+        <form action="asdfa.php" method="post">
+            <fieldset>
+                <legend>Registro</legend>
+                <label for="nombre">
+                    Nombre:
+                    <input type="text" id="nombre" value="nombre" name="nombre" minlength="3" maxlength="40" required>
+                </label>
+                <label for="email">
+                    Email:
+                    <input type="text" id="email" value="email" name="email" maxlength="50" required>
+                </label>
+                <label for="contraseña">
+                    Contraseña:
+                    <input type="password" id="contraseña" value="contraseña" name="contraseña" pattern="(?=.*\d){8,}">
+                </label>
+                <label for="edad">
+                    Edad:
+                    <input type="number" id="edad" value="edad" name="edad" min="18" max="99">
+                </label>
+                <label for="fechanacimiento">
+                    Fecha de nacimiento:
+                    <input type="date" id="fechanacimiento" value="fechanacimiento" name="fechanacimiento">
+                </label>
+                <label for="tlf">
+                    Teléfono:
+                    <input type="tel" id="tlf" value="tlf" name="tlf" pattern="[0-9]{9,11}">
+                </label>
+                <input type="checkbox" id="terminos" value="terminos" name="terminos">
+                <label for="terminos">Aceptar terminos de uso</label>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar datos</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

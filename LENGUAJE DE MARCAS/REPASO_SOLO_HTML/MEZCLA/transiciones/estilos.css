@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.caja-transicion{
+    text-align: center;
+    margin-top: 50px;
+
+
+    transition: 2s transform;
+    border:solid 1px black;
+    
+    
+}
+
+.caja-transicion:hover{
+    color:yellow;
+    transform: rotate(360deg) scale(1.2);
+}
+

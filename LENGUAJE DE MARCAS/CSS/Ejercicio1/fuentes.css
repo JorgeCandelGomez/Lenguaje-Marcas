@@ -1,0 +1,14 @@
+h1{
+    font-size: 22pt;
+    text-shadow: 2px 4px 1px red;
+}
+
+p{
+    font-family: "Trebuchet MS",Arial,sans-serif;
+    font-size: 16pt;
+    font-weight: 900;
+    text-decoration: line-through;
+    text-decoration: underline;
+    text-transform: uppercase;
+    
+}

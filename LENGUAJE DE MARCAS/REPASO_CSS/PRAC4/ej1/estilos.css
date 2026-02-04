@@ -1,0 +1,46 @@
+footer,header{
+    background-color: #84250C;
+    color: white;
+}
+
+.menu{
+    list-style-type: none;
+    text-align: right;
+    
+}
+
+.menu li{
+    display: inline;
+    margin: 10px;
+}
+
+header{
+    padding-bottom: 5px;
+}
+
+footer{
+    text-align: center;
+    height: 20px;
+    padding: 10px;
+}
+
+#principal{
+    margin: 50px 20%;
+    
+}
+
+#contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    
+}
+
+#oferta{
+    grid-column-start:1;
+    grid-column-end: 3;
+    border: solid 1px grey;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin-right: 20px;
+}

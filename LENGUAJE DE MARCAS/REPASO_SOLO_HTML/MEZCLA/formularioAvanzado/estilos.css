@@ -1,0 +1,93 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    
+    display: flex; 
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;
+    background-color: #f4f4f4;
+    
+}
+
+form legend{
+    font-size: 18px;
+    font-weight:bold;
+}
+label, input{
+    display:block;
+}
+
+form label,input,select{
+   padding:5px;
+   margin-bottom:15px;
+}
+
+
+
+
+
+
+form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto auto;
+    gap:10px 10px;
+
+}
+
+#datosAcceso{
+    grid-column-start:1;
+}
+
+#datosPersonales{
+    grid-column-start:2;
+}
+
+#controles{
+    margin-top:15px;
+    text-align:center;
+    grid-row-start:2;
+    grid-column-start:1;
+    grid-column-end:3;
+    transition:color 1s;
+    
+}
+
+input,select,textarea{
+    transition:border 0.5s ease,box-shadow 0.4s ease;
+    
+}
+
+input:hover,
+select:hover,
+textarea:hover{
+    border: 3px solid #007bff;
+    box-shadow:5px 5px #007bff;
+}
+
+input:required:invalid{
+    border:3px dashed red;
+}
+
+input[type="password"]{
+    background-color:rgb(51, 228, 130);
+}
+
+#controles [type="submit"],
+#controles [type="reset"]{
+    display:inline;
+    padding:5px;
+    margin:10px;
+    
+}
+#controles [type="submit"]:hover,
+#controles [type="reset"]:hover{
+    transform: scale(1.1) translateY(-5px);
+    
+}
+
+
+

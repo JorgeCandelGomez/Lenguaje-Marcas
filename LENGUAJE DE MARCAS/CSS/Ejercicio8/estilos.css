@@ -1,0 +1,20 @@
+body{
+    background-color: #B6EEF0;
+    font-family: Gluten,'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 12pt;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+h1,h2,h3{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+h1{color: #0728F6; font-size: 24pt;}
+h2{color: #455CED; font-size: 20pt;}
+h3{color: #6272D6; font-size: 16pt;}
+
+strong{
+    color:#455CED;
+}

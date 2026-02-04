@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compuesto</title>
+        <link rel="stylesheet" href="estilos.css">
+    
+    </head>
+    <body>
+        <header id="home">
+            <h1>Titulo</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="#home">Home</a> </li>
+                     <li><a href="#precios">Precios</a> </li>
+                      <li><a href="#contacto">Contacto</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="principal">
+            <section id="precios">
+                <figure>
+                    <figcaption>Tabla de precios</figcaption>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Plan</th>
+                                <th>Precio</th>
+                                <th>Características</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Plan 1</td>
+                                <td>10</td>
+                                <td>Carac 1</td>
+                            </tr>
+
+                            <tr>
+                                <td>Plan 2</td>
+                                <td>20</td>
+                                <td>Carac 2</td>
+                            </tr>
+
+                            <tr>
+                                <td>Plan 3</td>
+                                <td>30</td>
+                                <td>Carac 3</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Linea completa, lo que sea </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </figure>
+            </section>
+
+            <section id="contacto">
+                <form action="x.php" method="post">
+                    <fieldset>
+                        <legend>Datos</legend>
+                         
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" required placeholder="Correo">
+
+                        <label for="mensaje">Cuadro de texto</label>
+                        <textarea rows="5" cols="40" id="mensaje" name="mensaje"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

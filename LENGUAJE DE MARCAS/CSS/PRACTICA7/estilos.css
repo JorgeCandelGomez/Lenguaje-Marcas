@@ -1,0 +1,50 @@
+#queEs,#adaptativo,#responsive,#conclusiones{
+    background-color: rgb(226, 204, 8);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    border-radius:10px;
+    box-sizing: border-box;
+    display: block;
+    width:auto;
+
+}
+h1{
+    margin:10px;
+}
+
+
+
+@media(min-width:769px) and (max-width: 992px){
+    #contenido{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap:10px;
+    }
+
+    #queEs, #conclusiones{
+        grid-column-start:1;
+        grid-column-end:3;
+        background-color: grey;
+    }
+
+
+    #adaptativo{
+        grid-row-start:2;
+        grid-column-start:1;
+    }
+    #responsive{
+        grid-row-start:2;
+        grid-column-start:2;
+    }
+}
+
+@media(min-width: 993px){
+    #contenido{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+}

@@ -1,0 +1,156 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    padding:20px 5%;
+}
+
+#menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    background-color: yellow;
+    font-size:20px;
+    
+
+}
+
+#menu li{
+    flex:1;
+    text-align: center;
+}
+
+#menu a{
+    text-decoration:none;
+    padding:10px;
+    display:block;
+
+}
+
+#menu li:hover{
+    background-color: lightblue;
+}
+
+#menu a:link, #menu a:visited, #menu a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+main{
+    display:flex;
+   
+    flex-direction: column;
+    justify-content:none;
+    gap:30px;
+    margin-top:30px;
+}
+
+#caracteristicas{
+    flex:1;
+    
+
+}
+
+#caracteristicas ul,form{
+    padding-top: 15px;
+}
+
+#suscripcion{
+    flex:1;
+    
+}
+
+
+
+input[type="text"],
+input[type="email"]{
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus{
+    border: yellow 3px solid;
+    box-shadow: 2px 2px red;
+    outline:none;
+}
+
+input[type="checkbox"]{
+    width:auto;
+    margin-right:5px;
+    accent-color:green;
+}
+input[type="submit"]{
+    transition: transform 0.5s;
+
+}
+
+input[type="submit"]:hover{
+    transform: translateY(-10px);
+}
+
+label,input{
+    display:block;
+    margin:10px;
+}
+
+input[type="checkbox"]{
+    display:inline-block;
+    width:auto;
+}
+
+input[for="consentimiento"]{
+    display:inline;
+    
+}
+
+
+
+#controles{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+#controles input{
+    padding:10px 20px;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+
+
+    flex:1;
+    width:auto;
+}
+
+
+#caracteristicas ul li:nth-child(2){
+    background-color: blue;
+}
+
+@media screen and (min-width: 900px){
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    #caracteristicas{
+        grid-column-start: 1;
+
+    }
+    #suscripcion{
+        grid-column-start: 2;
+        
+    }
+}

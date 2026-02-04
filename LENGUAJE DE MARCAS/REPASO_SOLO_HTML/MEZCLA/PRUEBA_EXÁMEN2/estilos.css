@@ -1,0 +1,188 @@
+:root{
+    --color-primario: #FF6600;
+    --color-oscuro: #333333;
+    --color-claro: #ffffff;
+    --color-fondo: #f4f4f4;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+nav,footer{
+    background-color: var(--color-oscuro);
+    height: 50px;
+    color: var(--color-claro);
+    display:flex;
+    gap: 10px;
+
+    font-size: 25px;
+}
+
+nav ul, footer ul{
+    flex:1;
+
+    display:flex;
+    gap:20px;
+    justify-content: right;
+    list-style: none;
+}
+
+ul a,footer a{
+    color: var(--color-claro);
+    text-decoration: none;
+}
+
+/*header*/
+
+header{
+    text-align: center;
+    padding: 50px;
+    background-color: grey;
+    margin:calc(100px -100px);
+
+}
+
+header > h1{
+    color: var(--color-primario);
+    font-size: 40px;
+}
+
+header p, header a{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+header a:link,
+header a:visited,
+header a:hover{
+    color: purple;
+
+}
+
+/*main*/
+main{
+    background-color: var(--color-fondo);
+    padding-left:100px;
+    padding-right: 100px;
+}
+
+h2{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 35px;
+}
+
+#ponentes{
+    margin-top: 20px;
+    padding-left: 40px;
+    
+
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#ponentes article{
+    background-color: var(--color-claro);
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 25px;
+}
+
+/*Programa*/
+    .programa{
+
+        background-color: var(--color-claro);
+        padding: 30px;
+        font-size: 25px;
+        margin-top: 20px;
+        padding-left: 40px;
+        border-radius: 10px;
+        
+    }
+    .programa ul{
+        list-style-type: square;
+    }
+
+    .progama ul li{
+        list-style-position: inside;
+    }
+
+    aside{
+        margin-top:20px;
+
+    }
+    aside p{
+        color: red;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+
+/*Tarifas*/
+
+#entradas{
+    background-color: var(--color-claro);
+
+}
+
+table{
+    border-collapse: collapse;
+    width:100%;
+    text-align: left;
+}
+
+th,td{
+    border: var(--color-oscuro) 1px solid;
+    padding: 10px;
+    font-size: 25px;
+}
+
+th{
+    background-color: var(--color-primario);
+    color: var(--color-claro);
+}
+
+/*Contacto*/
+
+#contacto{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-size:25px;
+    font-weight: bold; 
+}
+
+input[type="submit"]{
+    padding: 10px;
+    background-color: var(--color-primario);
+    color: var(--color-claro);
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1023px){
+
+    #ponentes{
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        gap:10px;
+        min-width: 250px;
+    }
+
+    main{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    nav, .menu-interno, footer {
+        flex-direction: column; 
+        gap: 10px;
+        text-align: center;
+    }
+}

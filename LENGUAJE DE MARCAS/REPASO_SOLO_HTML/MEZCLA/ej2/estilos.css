@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+
+
+
+nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap:wrap;
+
+    list-style:none;
+    background-color: yellow;
+    font-size: 20px;
+    
+
+}
+
+nav ul li{
+    flex: 1;
+    min-width:20px;
+
+
+    display:inline;
+    
+    padding:10px;
+
+    
+}
+
+nav  a:link, nav a:visited, nav  a:hover{
+    text-decoration:none;
+    font-weight: bold;
+    display:block;
+    
+}
+
+nav li:hover{
+    background-color: blue;
+}
+
+
+
+table,th,td{
+    margin-top:10px;
+    border:solid 2px black;
+    border-collapse:collapse;
+    padding:20px;
+    text-align:center;
+    
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    grid-template-rows: auto auto;
+    margin-top: 50px;
+}
+
+
+#tabla{
+    grid-row-start:1;
+    grid-row-end:3;
+}
+#fotos{
+
+    display:flex;
+    flex-direction:column;
+
+
+    grid-column-start:2;
+    grid-row-start:1;
+    grid-row-end:3;
+    margin: 10px;
+    gap:20px;
+    padding:10px;
+
+}
+
+#fotos img{
+    max-width:100%;
+    height:auto;
+}
+
+
+
+
+.botones-flex ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    flex-direction: row;
+
+    list-style:none;
+    font-size:20px;
+    background-color: yellow;
+
+
+}
+
+
+.botones-flex li{
+    flex:1;
+    min-width:100px;
+
+    min-width:20px;
+    display: inline;
+    padding: 10px;
+    
+    
+
+}
+
+.botones-flex a:link, .botones-flex a:visited, .botones-flex a:hover{
+
+    text-decoration:none;
+    display:block;
+    font-weight: bold;
+    color:black;
+
+}
+
+.botones-flex li:hover{
+    background-color: blue;
+}
+
+
+@media screen and (max-width:600px){
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows:auto;
+    }
+
+    #tabla,#fotos{
+        grid-row:auto;
+        grid-column: auto;
+    }
+    .botones-flex ul{
+        flex-direction:column;
+    }
+
+    .botones-flex li{
+        text-align: center;
+        margin: 5px 0;
+    }
+}
