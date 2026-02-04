@@ -19,3 +19,4 @@ function tablaMultiplicar(){
 
     
 }
+tablaMultiplicar();

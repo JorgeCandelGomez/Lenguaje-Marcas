@@ -1,9 +1,3 @@
-var n1=(parseInt(prompt("Introduzca el primer número: ")));
-var n2=(parseInt(prompt("Introduzca el primer número: ")));
-
-
-
-
 
 function sumar(){
     let n1=(parseInt(prompt("Introduzca el primer número: ")));
