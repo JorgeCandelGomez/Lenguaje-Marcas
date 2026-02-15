@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let t1=String(prompt("Texto 1"));
+        let t2=String(prompt("Texto 2"));
+
+        function limpiarString(t1,t2){
+           var mod= t1.replace(t2,"");
+            alert(mod)
+        }
+        console.log(t1)
+        console.log(t2);
+        limpiarString(t1,t2);
+
+        function detectarFormato(archivo){
+           archivo= String(archivo).toLowerCase();
+            if( archivo.endsWith("jpg"))
+                alert("archivo jpg")
+            else if(archivo.endsWith("png"))
+                alert("archivo png")
+            else
+                alert("archivo no reconocido.")
+        }
+        detectarFormato("hola.png");
+
+
+        function comprobarMatricula(matricula){
+            matricula=String(matricula).toUpperCase();
+            let patron=/^[0-9]{4}[A-Z]{3}$/;
+
+            if(patron.test(matricula))
+                alert("Matricula correcta")
+            else
+                alert("Matricula incorrecta")
+        }
+
+        comprobarMatricula("1234ABC");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

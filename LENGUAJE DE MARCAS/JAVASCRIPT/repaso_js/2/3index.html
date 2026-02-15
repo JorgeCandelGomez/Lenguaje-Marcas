@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tablaMultiplicar(){
+            let nAceptado=false;
+            let n1;
+        do{
+             n1=Number(prompt("Numero [1-10]"))
+            if(n1 >=1 && n1<=10)
+                nAceptado=true;
+        }while(!nAceptado);
+        document.write("<ul>");
+        for(var i=1;i<=10;i++){
+            document.write("<li>"+(i*n1)+"</li>")
+            
+        }
+        document.write("</ul>");
+        }
+        tablaMultiplicar();
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

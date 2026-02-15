@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let array=[6,8,10,10,26,2,4,30];
+        
+
+        const filtrarPositivos=(array) =>{
+            let soloPositivos= array.filter(n=> n>0);
+            array=soloPositivos.map(n=>n*n)
+            
+           for(let v of array){
+            console.log(v);
+           }
+
+        }
+        filtrarPositivos(array);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

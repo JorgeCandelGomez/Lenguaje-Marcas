@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario JS</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        .campo { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; }
+        .radio-group label { display: inline; font-weight: normal; }
+    </style>
+    <script src="1fichero.js"></script>
+</head>
+<body>
+
+    <form id="form1" name="form1">
+        <div class="campo">
+            <label for="login">Login</label>
+            <input type="text" id="login" name="login">
+        </div>
+
+        <div class="campo">
+            <label for="nhijos">Número de hijos</label>
+            <input type="number" id="nhijos" name="nhijos">
+        </div>
+
+        <div class="campo">
+            <input type="checkbox" id="info" name="info">
+            <label style="display:inline" for="info">Deseo recibir información por e-mail</label>
+        </div>
+
+        <div class="campo radio-group">
+            <label>Horario preferido para llamadas</label><br>
+            <input type="radio" id="Mañana" name="horario" value="Mañana">
+            <label for="Mañana">Mañana</label>
+            
+            <input type="radio" id="Tarde" name="horario" value="Tarde">
+            <label for="Tarde">Tarde</label>
+            
+            <input type="radio" id="Noche" name="horario" value="Noche">
+            <label for="Noche">Noche</label>
+        </div>
+
+        <div class="campo">
+            <label for="operador">Seleccione operador</label>
+            <select id="operador" name="operador">
+                <option selected>Seleccione una opcion</option>
+                <option value="Movil1">Movil1</option>
+                <option value="Taronje">Taronje</option>
+                <option value="Hablafone">Hablafone</option>
+                <option value="Roigo">Roigo</option>
+            </select>
+        </div>
+
+        <input type="button" id="btnEnviar" value="Enviar">
+    </form>
+
+    
+</body>
+</html>

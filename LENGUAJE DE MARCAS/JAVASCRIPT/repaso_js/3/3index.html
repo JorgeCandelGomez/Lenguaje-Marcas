@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let array=[6,8,10,10,26,2,4,30];
+        let n=Number(prompt("Numero"));
+
+        const comprobarMultiplos= (array,x)=> {
+            let resultado= array.every(num => num%x ===0 );
+            alert(resultado);
+        }
+
+        comprobarMultiplos(array,n=2);
+        comprobarMultiplos([10, 20, 31], 10);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
